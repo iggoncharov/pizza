@@ -32,28 +32,28 @@ def test_eq():
 
 def test_bake():
     """Тестирует функцию bake"""
-    my_number = 4
+    my_number = 5
     with patch.object(random, "randint", return_value = my_number):
         assert (
-            bake(Pepperoni()) == '🍳Готовит пиццу за 4 мин ⏳!'
+            bake(Pepperoni()) == '🍳Готовит пиццу за 5 мин ⏳!'
         )
 
 
 def test_delivery_():
     """Тестирует функцию delivery_"""
-    my_number = 4
+    my_number = 42
     with patch.object(random, "randint", return_value = my_number):
         assert (
-            delivery_(Pepperoni()) == '🚚Доставляет пиццу за 4 мин ⏳!'
+            delivery_(Pepperoni()) == '🚚Доставляет пиццу за 42 мин ⏳!'
         )
 
 
 def test_pickup():
     """Тестирует функцию pickup"""
-    my_number = 4
+    my_number = 20
     with patch.object(random, "randint", return_value = my_number):
         assert (
-            pickup(Pepperoni()) == '🏃Самовывоз пиццы через 4 min ⌛!'
+            pickup(Pepperoni()) == '🏃Самовывоз пиццы через 20 min ⌛!'
         )
 
 
