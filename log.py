@@ -33,11 +33,9 @@ def log(params: str) -> Callable:
 def bake(pizza: BasePizza) -> int:
     """Готовит пиццу"""
 
-
 @log('🚚Доставляет пиццу за {} мин ⏳!')
 def delivery_(pizza: BasePizza) -> int:
     """Доставляет пиццу"""
-
 
 @log('🏃Самовывоз пиццы через {} min ⌛!')
 def pickup(pizza: BasePizza) -> int:
