@@ -32,20 +32,20 @@ class Margherita(BasePizza):
     Класс для пиццы Маргарита
     """
 
-    def __init__(self, size: str = "L"):
-        self.name = "Margherita 🧀"
-        self.dop_ingredients = {"🍅 tomatoes": 100}
+    def __init__(self, size: str = 'L'):
+        self.name = 'Margherita 🧀'
+        self.dop_ingredients = {'🍅 tomatoes': 100}
         super().__init__(self.dop_ingredients, size, self.name)
 
 
 class Pepperoni(BasePizza):
     """
-    Классдля пиццы Пепперони
+    Класс для пиццы Пепперони
     """
 
-    def __init__(self, size: str = "L"):
-        self.name = "Pepperoni 🍕"
-        self.dop_ingredients = {"🍪 pepperoni": 50}
+    def __init__(self, size: str = 'L'):
+        self.name = 'Pepperoni 🍕'
+        self.dop_ingredients = {'🍪 pepperoni': 50}
         super().__init__(self.dop_ingredients, size, self.name)
 
 
@@ -54,7 +54,7 @@ class Hawaiian(BasePizza):
     Класс для для пиццы Гавайская
     """
 
-    def __init__(self, size: str = "L"):
-        self.name = "Hawaiian 🍍"
-        self.dop_ingredients = {"🍗 chicken": 50, "🍍 pineapples": 50}
+    def __init__(self, size: str = 'L'):
+        self.name = 'Hawaiian 🍍'
+        self.dop_ingredients = {'🍗 chicken': 50, '🍍 pineapples': 50}
         super().__init__(self.dop_ingredients, size, self.name)
