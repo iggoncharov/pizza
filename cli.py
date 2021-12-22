@@ -28,7 +28,7 @@ def menu():
 @cli.command()
 @click.option("--delivery", default=False, is_flag=False)
 @click.argument('pizza', nargs=1)
-@click.argument('size', nargs=1)
+@click.argument('size', nargs=1, default = 'L')
 def order(pizza: str, size: str, delivery: bool):
     """Готовит и доставляет пиццу"""
     pizza = pizza.lower()
