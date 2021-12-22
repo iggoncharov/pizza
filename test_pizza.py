@@ -21,14 +21,12 @@ def test_dict():
     }
     assert "🍅 tomatoes" in Margherita().dict()
 
-
 def test_eq():
     """Тестирует метод eq, который сравнивает пиццы между собой на основании состава и размера"""
     assert Pepperoni(size="XL") == Pepperoni(size="XL")
     assert Pepperoni(size="L") != Pepperoni(size="XL")
     assert Pepperoni(size="XL") != Hawaiian(size="XL")
     assert Pepperoni(size="XL") != Margherita(size="L")
-
 
 def test_bake():
     """Тестирует функцию bake"""
@@ -38,7 +36,6 @@ def test_bake():
             bake(Pepperoni()) == '🍳Готовит пиццу за 5 мин ⏳!'
         )
 
-
 def test_delivery_():
     """Тестирует функцию delivery_"""
     my_number = 42
@@ -47,7 +44,6 @@ def test_delivery_():
             delivery_(Pepperoni()) == '🚚Доставляет пиццу за 42 мин ⏳!'
         )
 
-
 def test_pickup():
     """Тестирует функцию pickup"""
     my_number = 20
@@ -55,7 +51,6 @@ def test_pickup():
         assert (
             pickup(Pepperoni()) == '🏃Самовывоз пиццы через 20 min ⌛!'
         )
-
 
 def test_menu():
     """Тестирует функцию menu"""
