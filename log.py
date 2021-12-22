@@ -15,7 +15,7 @@ def log(params: str) -> Callable:
             """
 
             if func.__name__ == 'bake':
-                if pizza.size == "XL":
+                if pizza.size == 'XL':
                     return params.format(random.randint(11, 12))
                 else:
                     return params.format(random.randint(5, 10))
@@ -31,16 +31,17 @@ def log(params: str) -> Callable:
     return outer_wrapper
 
 
-@log("🍳Готовит пиццу за {} мин ⏳!")
+@log('🍳Готовит пиццу за {} мин ⏳!')
 def bake(pizza: BasePizza) -> int:
     """Готовит пиццу"""
 
 
-@log("🚚Доставляет пиццу за {} мин ⏳!")
+@log('🚚Доставляет пиццу за {} мин ⏳!')
 def delivery_(pizza: BasePizza) -> int:
     """Доставляет пиццу"""
 
 
-@log("🏃Самовывоз пиццы через {} min ⌛!")
+@log('🏃Самовывоз пиццы через {} min ⌛!')
 def pickup(pizza: BasePizza) -> int:
     """Самовывоз"""
+
