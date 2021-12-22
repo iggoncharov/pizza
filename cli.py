@@ -8,7 +8,6 @@ from random import randint
 def cli():
     pass
 
-
 @cli.command()
 def menu():
     """Выводит меню"""
@@ -25,7 +24,6 @@ def menu():
     for pizza in pizzas:
         print(pizza.name, end = ': ')
         print(' '.join(pizza.ingredients.keys()))
-
 
 @cli.command()
 @click.option("--delivery", default=False, is_flag=False)
