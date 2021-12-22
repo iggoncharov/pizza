@@ -8,18 +8,18 @@ from cli import order, menu
 
 def test_dict():
     """Тестирует свойство ingredient, которое выводит рецепт"""
-    assert Hawaiian(size="L").ingredient == {
+    assert Hawaiian(size="L").dict() == {
         '🥫 tomato sauce': 50,
         '🧀 mozzarella': 100,
         '🍗 chicken': 50,
         '🍍 pineapples': 50,
     }
-    assert Pepperoni(size="XL").ingredient == {
+    assert Pepperoni(size="XL").dict() == {
         '🥫 tomato sauce': 75,
         '🧀 mozzarella': 150,
         '🍪 pepperoni': 75,
     }
-    assert "🍅 tomatoes" in Margherita().ingredient
+    assert "🍅 tomatoes" in Margherita().dict()
 
 
 def test_eq():
