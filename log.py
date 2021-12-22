@@ -19,10 +19,8 @@ def log(params: str) -> Callable:
                     return params.format(random.randint(11, 12))
                 else:
                     return params.format(random.randint(5, 10))
-
             elif func.__name__ == 'delivery_':
                 return params.format(random.randint(30, 60))
-
             elif func.__name__ == 'pickup':
                 return params.format(random.randint(20, 30))
 
