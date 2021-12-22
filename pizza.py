@@ -13,8 +13,7 @@ class BasePizza:
         if self.size == 'XL':
             self.ingredients = {k: 1.5 * v for k, v in self.ingredients.items()}
 
-    @property
-    def ingredient(self) -> dict:
+    def dict(self) -> dict:
         """
         Функция, возвращающая рецепт пиццы в виде словаря
         """
