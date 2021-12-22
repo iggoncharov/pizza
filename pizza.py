@@ -34,7 +34,7 @@ class Margherita(BasePizza):
 
     def __init__(self, size: str = "L"):
         self.name = "Margherita 🧀"
-        self.dop_ingredients = {"🍅 tomatoes": 75}
+        self.dop_ingredients = {"🍅 tomatoes": 100}
         super().__init__(self.dop_ingredients, size, self.name)
 
 
@@ -45,7 +45,7 @@ class Pepperoni(BasePizza):
 
     def __init__(self, size: str = "L"):
         self.name = "Pepperoni 🍕"
-        self.dop_ingredients = {"🍪 pepperoni": 70}
+        self.dop_ingredients = {"🍪 pepperoni": 50}
         super().__init__(self.dop_ingredients, size, self.name)
 
 
