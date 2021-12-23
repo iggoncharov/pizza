@@ -32,25 +32,19 @@ def test_bake():
     """Тестирует функцию bake"""
     my_number = 5
     with patch.object(random, "randint", return_value = my_number):
-        assert (
-            bake(Pepperoni()) == '🍳Готовит пиццу за 5 мин ⏳!'
-        )
+        assert (bake(Pepperoni()) == '🍳Готовит пиццу за 5 мин ⏳!')
 
 def test_delivery_():
     """Тестирует функцию delivery_"""
     my_number = 42
     with patch.object(random, "randint", return_value = my_number):
-        assert (
-            delivery_(Pepperoni()) == '🚚Доставляет пиццу за 42 мин ⏳!'
-        )
+        assert (delivery_(Pepperoni()) == '🚚Доставляет пиццу за 42 мин ⏳!')
 
 def test_pickup():
     """Тестирует функцию pickup"""
     my_number = 20
     with patch.object(random, "randint", return_value = my_number):
-        assert (
-            pickup(Pepperoni()) == '🏃Самовывоз пиццы через 20 min ⌛!'
-        )
+        assert (pickup(Pepperoni()) == '🏃Самовывоз пиццы через 20 min ⌛!')
 
 def test_menu():
     """Тестирует функцию menu"""
@@ -65,5 +59,4 @@ def test_menu():
         'Margherita 🧀: 🥫 tomato sauce 🧀 mozzarella 🍅 tomatoes\n' +
         'Hawaiian 🍍: 🥫 tomato sauce 🧀 mozzarella 🍗 chicken ' +
         '🍍 pineapples\n' +
-        'Pepperoni 🍕: 🥫 tomato sauce 🧀 mozzarella 🍪 pepperoni\n'
-    )
+        'Pepperoni 🍕: 🥫 tomato sauce 🧀 mozzarella 🍪 pepperoni\n')
